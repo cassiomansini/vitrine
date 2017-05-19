@@ -1,0 +1,36 @@
+.btn {
+    background-color red
+    padding 15px 20px
+    border-radius 5px
+    display inline-flex
+    align-items center
+    justify-content center
+    color white
+    text-decoration none
+    font-weight 700
+    box-shadow 0 0 0
+    transition 200ms
+    
+    &:hover {
+        text-decoration none
+        box-shadow 1px 1px alpha(black, .05)
+    }
+    
+    i.fa {
+        margin-right 10px
+        font-size 1.7em
+    }
+    
+    img {
+        margin-right 10px
+        max-width 30px
+        max-height 24px
+    }
+    
+    &.btn-dark {
+        background-color #551010
+        &:hover {
+            background-color @background-color - 20%
+        }
+    }
+}

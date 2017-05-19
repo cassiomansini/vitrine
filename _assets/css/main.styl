@@ -1,0 +1,25 @@
+flex-version = flex
+support-for-ie = true
+vendor-prefixes = official
+
+@import 'nib'
+@import 'rupture'
+@import 'jeet'
+
+global-reset();
+
+@import "_definitions/*";
+@import "elements/*";
+// @import "pages/*";
+
+@-ms-viewport{
+  width: device-width;
+}
+
+*, *:before, *:after {
+    box-sizing border-box
+}
+
+.clearfix {
+    clearfix();
+}

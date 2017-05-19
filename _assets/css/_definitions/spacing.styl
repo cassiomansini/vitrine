@@ -1,0 +1,68 @@
+lineHeights = 10 11 12 13 14 15 16 17 18 19 20
+for num in lineHeights
+  .lh-{num}
+    line-height: unit(num * 0.1, em)
+
+sizes = 0 5 10 15 20 25 30 35 40 45 50 55 60 120 180 240
+for num in sizes
+  .m-{num}
+    margin: unit(num, px) !important
+  .mb-{num}
+    margin-bottom: unit(num, px) !important
+  .mt-{num}
+    margin-top: unit(num, px) !important
+  .ml-{num}
+    margin-left: unit(num, px) !important
+  .mr-{num}
+    margin-right: unit(num, px) !important
+  .mtb-{num}
+    margin-top: unit(num, px) !important
+    margin-bottom: unit(num, px) !important
+  .mlr-{num}
+    margin-left: unit(num, px) !important
+    margin-right: unit(num, px) !important
+
+  .n-m-{num}
+    margin: unit(num * -1, px) !important
+  .n-mb-{num}
+    margin-bottom: unit(num * -1, px) !important
+  .n-mt-{num}
+    margin-top: unit(num * -1, px) !important
+  .n-ml-{num}
+    margin-left: unit(num * -1, px) !important
+  .n-mr-{num}
+    margin-right: unit(num * -1, px) !important
+    
+  +below(600px)
+    .mobile-n-m-{num}
+      margin: unit(num * -1, px) !important
+    .mobile-n-mb-{num}
+      margin-bottom: unit(num * -1, px) !important
+    .mobile-n-mt-{num}
+      margin-top: unit(num * -1, px) !important
+    .mobile-n-ml-{num}
+      margin-left: unit(num * -1, px) !important
+    .mobile-n-mr-{num}
+      margin-right: unit(num * -1, px) !important
+
+  
+  .p-{num}
+    padding: unit(num, px) !important
+  .pb-{num}
+    padding-bottom: unit(num, px) !important
+  .pt-{num}
+    padding-top: unit(num, px) !important
+  .pl-{num}
+    padding-left: unit(num, px) !important
+  .pr-{num}
+    padding-right: unit(num, px) !important
+  .ptb-{num}
+    padding-top: unit(num, px) !important
+    padding-bottom: unit(num, px) !important
+  .plr-{num}
+    padding-left: unit(num, px) !important
+    padding-right: unit(num, px) !important
+    
+.flex-spacer {
+  flex 1
+}
